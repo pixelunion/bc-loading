@@ -3,10 +3,17 @@ import trend from 'jquery-trend';
 
 export default class LoadingUtils {
   constructor(options, scrollLock, el) {
-    this.options = options;
     this.scrollLock = scrollLock;
     this.$body = $(document.body);
     this.$el = el ? $(el) : this.$body;
+
+    this.options = $.extend({
+      loadingMarkup: '<div class="loading"><span class="loading-spinner"></span></div>',
+      visibleClass: 'visible',
+      scrollLockClass: 'scroll-locked',
+    }, options);
+
+    this.$loading = $(this.options.loadingMarkup);
   }
 
   show() {
@@ -20,12 +27,10 @@ export default class LoadingUtils {
       this.$el.css('position', 'relative')
     }
 
-    this.$el.prepend(this.options.loadingMarkup);
-
-    const $loading = this.$el.children(this.options.loadingSelector);
+    this.$el.prepend(this.$loading);
 
     setTimeout(() => {
-      $loading.addClass(this.options.visibleClass);
+      this.$loading.addClass(this.options.visibleClass);
     }, 10);
   }
 
@@ -34,10 +39,8 @@ export default class LoadingUtils {
       this.$body.removeClass(this.options.scrollLockClass);
     }
 
-    const $loading = this.$el.children(this.options.loadingSelector);
-
-    $loading.removeClass(this.options.visibleClass).one('trend', () => {
-      $loading.remove();
+    this.$loading.removeClass(this.options.visibleClass).one('trend', () => {
+      this.$loading.remove();
     });
   }
 }

@@ -16,7 +16,6 @@ import $ from 'jquery';
 import Loading from 'bc-loading';
 
 const loadingOptions = {
-  loadingSelector: '.loading',
   loadingMarkup: '<div class="loading"><span class="loading-spinner"></span></div>',
   visibleClass: 'visible',
   scrollLockClass: 'scroll-locked',
@@ -35,8 +34,6 @@ const shippingCalculator = new ShippingCalculator({
 
 Instantiate with:
 `new Loading(options, scrollLock, scope);`
-
-**loadingSelector:** Top-level selector of your loadingMarkup
 
 **loadingMarkup:** Simple markup comprsing your loading overlay.
 
