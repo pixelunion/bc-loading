@@ -14,9 +14,13 @@ export default class LoadingUtils {
       this.$body.addClass(this.options.scrollLockClass);
     }
 
-    this.$el
-      .css('position', 'relative')
-      .prepend(this.options.loadingMarkup);
+    const elementPositioning = this.$el.css('position');
+
+    if (elementPositioning !== 'relative' && elementPositioning !== 'absolute') {
+      this.$el.css('position', 'relative')
+    }
+
+    this.$el.prepend(this.options.loadingMarkup);
 
     const $loading = this.$el.children(this.options.loadingSelector);
 
