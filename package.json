@@ -1,9 +1,9 @@
 {
   "name": "bc-loading",
   "description": "Bigcommerce Loading Overlay Module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
-  "main": "assets/js/loading",
+  "main": "dist/js/loading",
   "jspm": {
     "main": "loading",
     "directories": {
@@ -18,5 +18,14 @@
       "babel-runtime": "npm:babel-runtime@4.7.16",
       "core-js": "npm:core-js@^0.8.4"
     }
+  },
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "jquery-trend": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-runtime": "^6.9.2",
+    "core-js": "^2.4.1"
   }
 }
