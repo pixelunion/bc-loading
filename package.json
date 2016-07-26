@@ -5,7 +5,7 @@
   "private": true,
   "main": "dist/loading",
   "jspm": {
-    "main": "assets/loading",
+    "main": "assets/js/loading",
     "directories": {
       "lib": "src/js"
     },
