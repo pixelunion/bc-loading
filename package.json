@@ -3,9 +3,9 @@
   "description": "Bigcommerce Loading Overlay Module",
   "version": "0.0.2",
   "private": true,
-  "main": "dist/js/loading.js",
+  "main": "dist/loading",
   "jspm": {
-    "main": "assets/js/loading",
+    "main": "assets/loading",
     "directories": {
       "lib": "src/js"
     },

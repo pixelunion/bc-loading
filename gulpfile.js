@@ -3,10 +3,10 @@ var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 
 gulp.task('bundle', function() {
-  gulp.src('./src/js/loading.js')
+  gulp.src('./src/loading.js')
     .pipe(babel({
       presets: ['es2015']
     }))
     .pipe(uglify())
-    .pipe(gulp.dest('./dist/js/'));
+    .pipe(gulp.dest('./dist/'));
 });
