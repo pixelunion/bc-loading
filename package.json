@@ -7,7 +7,7 @@
   "jspm": {
     "main": "assets/js/loading",
     "directories": {
-      "lib": "src/js"
+      "lib": "src/"
     },
     "dependencies": {
       "jquery": "github:components/jquery@^2.1.4",
