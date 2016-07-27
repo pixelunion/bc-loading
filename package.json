@@ -5,9 +5,9 @@
   "private": true,
   "main": "dist/loading",
   "jspm": {
-    "main": "assets/js/loading",
+    "main": "loading.js",
     "directories": {
-      "lib": "src/"
+      "lib": "src"
     },
     "dependencies": {
       "jquery": "github:components/jquery@^2.1.4",
