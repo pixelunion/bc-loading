@@ -1,7 +1,7 @@
 {
   "name": "bc-loading",
   "description": "Bigcommerce Loading Overlay Module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "main": "dist/loading",
   "jspm": {
