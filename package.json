@@ -31,7 +31,7 @@
   },
   "scripts": {
     "gulp-bundle": "gulp bundle",
-    "git-add": "git add ."
+    "git-add": "git add dist/loading.js"
   },
   "pre-commit": ["gulp-bundle", "git-add"]
 }
