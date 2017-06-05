@@ -23,7 +23,7 @@ export default class LoadingUtils {
 
     const elementPositioning = this.$el.css('position');
 
-    if (elementPositioning !== 'relative' && elementPositioning !== 'absolute') {
+    if (elementPositioning === 'static') {
       this.$el.css('position', 'relative')
     }
 

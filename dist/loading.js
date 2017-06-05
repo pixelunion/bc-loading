@@ -46,7 +46,7 @@ var LoadingUtils = function () {
 
       var elementPositioning = this.$el.css('position');
 
-      if (elementPositioning !== 'relative' && elementPositioning !== 'absolute') {
+      if (elementPositioning === 'static') {
         this.$el.css('position', 'relative');
       }
 
