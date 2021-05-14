@@ -4,14 +4,9 @@ Scope an overlay to a specific area, or cover the whole page (for use while wait
 
 ### Installation
 
-JSPM:
-```
-jspm install --save bc-loading=bitbucket:pixelunion/bc-loading
-```
-
 NPM:
 ```
-npm install --save bitbucket:pixelunion/bc-loading
+npm install --save github:pixelunion/bc-loading
 ```
 
 
